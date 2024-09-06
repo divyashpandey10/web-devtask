@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Team Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            background-color: #a855f7;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .intro p {
+            font-size: 16px;
+            color: #555;
+        }
+        .team-section {
+            margin-top: 40px;
+        }
+        .team-section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            padding: 0 20px;
+        }
+        .team-section h2::before, .team-section h2::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 2px;
+            background-color: #a855f7;
+        }
+        .team-section h2::before {
+            left: -70px;
+        }
+        .team-section h2::after {
+            right: -70px;
+        }
+        .team-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .team-member {
+            text-align: center;
+            margin: 20px;
+            flex-basis: 200px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .team-member h3 {
+            font-size: 18px;
+            color: #333;
+        }
+        .team-member p {
+            font-size: 14px;
+            color: #888;
+        }
+        @media (max-width: 768px) {
+            .team-row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        Company Name
+    </div>
+
+    <div class="intro">
+        <p>Welcome to [VeriTech Software IT Services!], where a dedicated team of professionals works together to bring innovation, creativity, and expertise to serve the industry. Get to know the individuals who make our company thrive.</p>
+    </div>
+
+    <div class="team-section">
+        <h2>Meet Our Team</h2>
+
+        <div class="team-section">
+            <h2>Leadership / Management Team</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>Founder Name</h3>
+                    <p>Founder / CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>Founder Name</h3>
+                    <p>Founder / CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>VP Name</h3>
+                    <p>VP, Operations</p>
+                </div>
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>VP Name</h3>
+                    <p>VP, Finance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Development Team</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>Developer Name</h3>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>Developer Name</h3>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>Developer Name</h3>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Sales and Marketing Team</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>Employee Name</h3>
+                    <p>Sales Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>Employee Name</h3>
+                    <p>Sales Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="avatar.png" alt="Team Member">
+                    <h3>Founder Name</h3>
+                    <p>Marketing Officer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
